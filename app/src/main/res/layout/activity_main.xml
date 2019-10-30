@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.donald.fedexapp.MainActivity">
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="124dp"
+        android:layout_height="69dp"
+        android:text="Add Order"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="111dp"
+        android:layout_marginBottom="39dp"
+        android:layout_above="@+id/trackButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/trackButton"
+        android:layout_width="124dp"
+        android:layout_height="69dp"
+        android:text="Track Order"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="218dp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/addButton" />
+
+    <Button
+        android:id="@+id/listButton"
+        android:layout_width="124dp"
+        android:layout_height="69dp"
+        android:text="List of Orders DB"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="338dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/trackButton"
+        android:layout_marginBottom="110dp" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:text="FedEx Menu"
+        android:textSize="30dp"
+        tools:ignore="MissingPrefix"
+        android:layout_above="@+id/addButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+
+</RelativeLayout>
